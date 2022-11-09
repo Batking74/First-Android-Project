@@ -7,20 +7,14 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Nazir App"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.NazirApp"
+        android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
-
-        <meta-data
-            android:value="ca-app-pub-8343295514519977~7547576205"
-            android:name="com.google.android.gms.ads.APPLICATION_ID"></meta-data>
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.NazirApp.NoActionBar">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
