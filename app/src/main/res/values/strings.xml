@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Nazir App</string>
+    <string name="button">Button</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="sign_in">Sign In</string>
+    <string name="welcome">Welcome!</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="todo">TODO</string>
+    <string name="BackButton">Back</string>
 </resources>
