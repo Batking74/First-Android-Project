@@ -57,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
             ((Button)findViewById(R.id.SignInButton)).setText(message[2]);
             validateSwitch(mySwitch, username, password, message[0], message[1], message[3]);
             Intent myIntent = new Intent(this, WelcomeActivity.class);
+            String welcomeActivityData = "Greetings " + username;
+            myIntent.putExtra("Greet User", welcomeActivityData);
             startActivity(myIntent);
         }
     }

@@ -8,4 +8,7 @@
     <string name="remember_me">Remember Me</string>
     <string name="todo">TODO</string>
     <string name="BackButton">Back</string>
+    <string name="settings">Settings</string>
+    <string name="textview">Greetings</string>
+    <string name="hello_world">Hello World</string>
 </resources>
