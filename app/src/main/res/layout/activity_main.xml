@@ -20,12 +20,10 @@
             android:layout_width="414dp"
             android:layout_height="270dp"
             android:background="#FF0000"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/UserConstraintLayout"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.4"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/TittleView"
@@ -47,13 +45,13 @@
                 android:id="@+id/imageView"
                 android:layout_width="204dp"
                 android:layout_height="188dp"
+                android:contentDescription="@string/todo"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.195"
-                app:srcCompat="@drawable/nazir"
-                android:contentDescription="@string/todo" />
+                app:srcCompat="@drawable/nazir" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
