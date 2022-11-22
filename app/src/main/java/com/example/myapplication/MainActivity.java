@@ -33,14 +33,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void signIn(View view) {
-        Switch mySwitch = findViewById(R.id.SwitchView);
+        @SuppressLint("UseSwitchCompatOrMaterialCode") Switch mySwitch = findViewById(R.id.SwitchView);
         String username = ((TextView)findViewById(R.id.UsernameInputView)).getText().toString();
         String password = ((TextView)findViewById(R.id.PasswordInputView)).getText().toString();
         validateUserInput(username, password, mySwitch);
         }
 
     @SuppressLint("SetTextI18n")
-    public void validateUserInput(String username, String password, Switch mySwitch) {
+    public void validateUserInput(String username, String password, @SuppressLint("UseSwitchCompatOrMaterialCode") Switch mySwitch) {
         if(username.isEmpty() && password.isEmpty()) {
             Toast.makeText(this, "Username and password is required!", Toast.LENGTH_LONG).show();
         }

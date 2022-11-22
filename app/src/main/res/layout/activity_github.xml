@@ -25,6 +25,7 @@
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="55dp"
         android:clickable="true"
+        android:contentDescription="@string/back_icon"
         android:focusable="true"
         android:onClick="BackToWelcomeActivity"
         app:backgroundTint="#FF0000"
@@ -32,6 +33,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:maxImageSize="34dp"
         app:srcCompat="@android:drawable/ic_menu_revert"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,UsingOnClickInXml" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

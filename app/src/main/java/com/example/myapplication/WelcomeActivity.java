@@ -16,11 +16,16 @@ public class WelcomeActivity extends AppCompatActivity {
         Intent i = getIntent();
         String greetUser = i.getStringExtra("Greet User");
         ((TextView)findViewById(R.id.GreetUser)).setText(greetUser);
-//        setTitle("Hello");
+//        setTitle("");
     }
 
     public void launchSettings(View view) {
         Intent i = new Intent(this, Settings.class);
+        startActivity(i);
+    }
+
+    public void LaunchGitHub(View view) {
+        Intent i = new Intent(this, GitHubActivity.class);
         startActivity(i);
     }
 }
