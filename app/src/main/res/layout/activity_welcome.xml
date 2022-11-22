@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     android:background="#F60505"
     android:onClick="launchSettings"
-    tools:context=".WelcomeActivity">
+    tools:context=".WelcomeActivity"
+    tools:ignore="UsingOnClickInXml">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/Settings"
@@ -19,7 +20,10 @@
         android:onClick="launchSettings"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_preferences" />
+        app:srcCompat="@android:drawable/ic_menu_preferences"
+        android:contentDescription="@string/something"
+        android:focusable="true"
+        tools:ignore="ContentDescription" />
 
     <com.google.android.material.chip.ChipGroup
         android:id="@+id/chipGroup"
@@ -36,31 +40,31 @@
             android:id="@+id/chip2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sports" />
+            android:text="@string/sports" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gaming" />
+            android:text="@string/gaming" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Programming" />
+            android:text="@string/programming" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Coding" />
+            android:text="@string/coding" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Music" />
+            android:text="@string/music" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip"
@@ -69,73 +73,73 @@
             android:layout_marginTop="80dp"
             android:backgroundTint="#FFFAFA"
             android:checkable="true"
-            android:text="Drama" />
+            android:text="@string/drama" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Politics" />
+            android:text="@string/politics" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Technology" />
+            android:text="@string/technology" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Business" />
+            android:text="@string/business" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Journalism" />
+            android:text="@string/journalism" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Art" />
+            android:text="@string/art" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Movies" />
+            android:text="@string/movies" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Food" />
+            android:text="@string/food" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cooking" />
+            android:text="@string/cooking" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Agriculture" />
+            android:text="@string/agriculture" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Finance" />
+            android:text="@string/finance" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip17"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Investing" />
+            android:text="@string/investing" />
 
     </com.google.android.material.chip.ChipGroup>
 
@@ -144,9 +148,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="What are your interests?"
+        android:text="@string/what_are_your_interests"
         android:textColor="#FFFFFF"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/GreetUser" />
@@ -159,9 +163,9 @@
         android:layout_marginTop="44dp"
         android:backgroundTint="#000000"
         android:onClick="LaunchGitHub"
-        android:text="GitHub"
+        android:text="@string/github"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:cornerRadius="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chipGroup" />

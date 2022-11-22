@@ -24,7 +24,8 @@
             android:layout_height="65dp"
             android:layout_marginTop="10dp"
             android:backgroundTint="#FF0000"
-            android:text="Your account" />
+            android:text="@string/your_account"
+            tools:ignore="TextContrastCheck" />
 
         <Button
             android:id="@+id/button3"
@@ -33,7 +34,8 @@
             android:layout_marginTop="10dp"
             android:height="65dp"
             android:backgroundTint="#FF0000"
-            android:text="Security and Login" />
+            android:text="@string/security_and_login"
+            tools:ignore="TextContrastCheck" />
 
         <Button
             android:id="@+id/button4"
@@ -42,7 +44,8 @@
             android:layout_marginTop="10dp"
             android:height="65dp"
             android:backgroundTint="#FF0000"
-            android:text="Career" />
+            android:text="@string/career"
+            tools:ignore="TextContrastCheck" />
 
         <Button
             android:id="@+id/button5"
@@ -51,7 +54,8 @@
             android:layout_marginTop="10dp"
             android:height="65dp"
             android:backgroundTint="#F40000"
-            android:text="Mobile" />
+            android:text="@string/mobile"
+            tools:ignore="TextContrastCheck" />
 
         <Button
             android:id="@+id/button6"
@@ -60,7 +64,8 @@
             android:layout_marginTop="10dp"
             android:height="65dp"
             android:backgroundTint="#FF0000"
-            android:text="Privacy" />
+            android:text="@string/privacy"
+            tools:ignore="TextContrastCheck" />
 
         <Button
             android:id="@+id/button7"
@@ -69,7 +74,8 @@
             android:layout_marginTop="10dp"
             android:height="65dp"
             android:backgroundTint="#FF0000"
-            android:text="Security and safety" />
+            android:text="@string/security_and_safety"
+            tools:ignore="TextContrastCheck" />
 
         <Button
             android:id="@+id/button9"
@@ -78,7 +84,8 @@
             android:layout_marginTop="10dp"
             android:height="65dp"
             android:backgroundTint="#FF0000"
-            android:text="Language and region" />
+            android:text="@string/language_and_region"
+            tools:ignore="TextContrastCheck" />
 
         <Button
             android:id="@+id/button10"
@@ -87,7 +94,8 @@
             android:layout_marginTop="10dp"
             android:height="65dp"
             android:backgroundTint="#FF0000"
-            android:text="Terms of service" />
+            android:text="@string/terms_of_service"
+            tools:ignore="TextContrastCheck" />
     </LinearLayout>
 
     <SearchView
